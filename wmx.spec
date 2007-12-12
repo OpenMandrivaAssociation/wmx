@@ -15,7 +15,7 @@ Patch2: wmx-my-config.patch.bz2
 Patch3: wmx-64bitptr.patch.bz2
 Buildroot: %{_tmppath}/%{name}-%{version}-%{release}
 Requires: rxvt
-BuildRequires: XFree86-devel
+BuildRequires: X11-devel
 
 %description
 wmx is another window manager for X. It provides a unusual style of
