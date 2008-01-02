@@ -13,6 +13,7 @@ Source0: %{name}-%{version}.tar.bz2
 Patch1: wmx-syntax-fix.patch.bz2
 Patch2: wmx-my-config.patch.bz2
 Patch3: wmx-64bitptr.patch.bz2
+Buildroot: %{_tmppath}/%{name}-%{version}-%{release}
 Requires: rxvt
 BuildRequires: X11-devel
 
