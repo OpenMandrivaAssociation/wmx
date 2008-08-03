@@ -1,6 +1,6 @@
 %define name wmx
 %define version 6pl1
-%define release %mkrel 5
+%define release %mkrel 6
 
 Summary: A minimal window manager
 Name: %{name}
