@@ -1,6 +1,6 @@
 %define name wmx
 %define version 6pl1
-%define release %mkrel 7
+%define release %mkrel 8
 
 Summary: A minimal window manager
 Name: %{name}
@@ -10,12 +10,14 @@ License: BSD-like
 Url: http://www.all-day-breakfast.com/wmx/
 Group: Graphical desktop/Other
 Source0: %{name}-%{version}.tar.bz2
-Patch1: wmx-syntax-fix.patch.bz2
-Patch2: wmx-my-config.patch.bz2
-Patch3: wmx-64bitptr.patch.bz2
+Patch1: wmx-syntax-fix.patch
+Patch2: wmx-my-config.patch
+Patch3: wmx-64bitptr.patch
 Buildroot: %{_tmppath}/%{name}-%{version}-%{release}
 Requires: rxvt
-BuildRequires: X11-devel
+BuildRequires: libx11-devel
+BuildRequires: libxext-devel
+BuildRequires: libxpm-devel
 
 %description
 wmx is another window manager for X. It provides a unusual style of
@@ -30,7 +32,7 @@ recompiling the code.
 %patch3 -p0
 
 %build
-%configure
+%configure2_5x
 %make
 
 %install
