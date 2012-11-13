@@ -1,0 +1,38 @@
+--- Client.C	2006/01/16 10:48:31	1.1
++++ Client.C	2006/01/16 10:49:10
+@@ -663,7 +663,7 @@
+ }
+ 
+ 
+-int Client::getAtomProperty(Atom a, Atom type)
++long Client::getAtomProperty(Atom a, Atom type)
+ {
+     char **p, *x;
+     if (getProperty_aux(display(), m_window, a, type, 1L,
+@@ -673,11 +673,11 @@
+ 
+     x = *p;
+     XFree((void *)p);
+-    return (int)x;
++    return (long)x;
+ }
+ 
+ 
+-int Client::getIntegerProperty(Atom a)
++long Client::getIntegerProperty(Atom a)
+ {
+     return getAtomProperty(a, XA_INTEGER);
+ }
+--- Client.h	2006/01/16 10:50:34	1.1
++++ Client.h	2006/01/16 10:50:48
+@@ -184,8 +184,8 @@
+     WindowManager *const m_windowManager;
+ 
+     char *getProperty(Atom);
+-    int getAtomProperty(Atom, Atom);
+-    int getIntegerProperty(Atom);
++    long getAtomProperty(Atom, Atom);
++    long getIntegerProperty(Atom);
+ 
+     // accessors 
+     Boolean getState(int *);

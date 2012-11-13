@@ -1,0 +1,40 @@
+--- Config.h.orig	2004-05-27 09:46:18.000000000 +0200
++++ Config.h	2004-05-27 11:19:03.000000000 +0200
+@@ -76,7 +76,7 @@
+ // What to run to get a new window (from the "New" menu option)
+ #define CONFIG_NEW_WINDOW_LABEL "New"
+ //#define CONFIG_NEW_WINDOW_COMMAND "xterm"
+-#define CONFIG_NEW_WINDOW_COMMAND "/home/chris/.wmx/terminal"
++#define CONFIG_NEW_WINDOW_COMMAND "/usr/bin/rxvt"
+ #define CONFIG_NEW_WINDOW_COMMAND_OPTIONS 0
+ // or, for example,
+ //#define CONFIG_NEW_WINDOW_COMMAND_OPTIONS "-ls","-sb","-sl","1024",0
+@@ -91,7 +91,7 @@
+ // middle-button menu
+ #define CONFIG_COMMAND_MENU       ".wmx"
+ // only used if COMMAND_MENU is not found; ignored if invalid directory:
+-#define CONFIG_SYSTEM_COMMAND_MENU	"/usr/local/lib/wmx/menu"
++#define CONFIG_SYSTEM_COMMAND_MENU	"/usr/share/wmx/menu"
+ // append screennumber to COMMAND_MENU directory;
+ // use non screen style as fallback
+ #define CONFIG_ADD_SCREEN_TO_COMMAND_MENU False
+@@ -306,8 +306,8 @@
+ // will be too.  The latter screws up in palette-based visuals, but
+ // should be okay in true-colour.
+ 
+-#define CONFIG_USE_PIXMAPS        True
+-#define CONFIG_USE_PIXMAP_MENUS   True
++#define CONFIG_USE_PIXMAPS        False
++#define CONFIG_USE_PIXMAP_MENUS   False
+ 
+ // Set CHANNEL_SURF for multi-channel switching; CHANNEL_CLICK_SIZE is
+ // how close you have to middle-button-click to the top-right corner
+@@ -328,7 +328,7 @@
+ // QUICK_FLIP_DELAY is the equivalent figure used when flipping with
+ // the Alt-Fn keys.  Milliseconds.
+ 
+-#define CONFIG_FLIP_DELAY         1000
++#define CONFIG_FLIP_DELAY         200
+ #define CONFIG_QUICK_FLIP_DELAY   200
+ 
+ // Set MAD_FEEDBACK for skeletal representations of windows when
