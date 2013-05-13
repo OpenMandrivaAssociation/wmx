@@ -15,9 +15,9 @@ Patch2: wmx-my-config.patch
 Patch3: wmx-64bitptr.patch
 Buildroot: %{_tmppath}/%{name}-%{version}-%{release}
 Requires: rxvt
-BuildRequires: libx11-devel
-BuildRequires: libxext-devel
-BuildRequires: libxpm-devel
+BuildRequires: pkgconfig(x11)
+BuildRequires: pkgconfig(xext)
+BuildRequires: pkgconfig(xpm)
 
 %description
 wmx is another window manager for X. It provides a unusual style of
