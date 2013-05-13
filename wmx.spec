@@ -1,6 +1,6 @@
 %define name wmx
 %define version 6pl1
-%define release %mkrel 8
+%define release  9
 
 Summary: A minimal window manager
 Name: %{name}
@@ -13,7 +13,6 @@ Source0: %{name}-%{version}.tar.bz2
 Patch1: wmx-syntax-fix.patch
 Patch2: wmx-my-config.patch
 Patch3: wmx-64bitptr.patch
-Buildroot: %{_tmppath}/%{name}-%{version}-%{release}
 Requires: rxvt
 BuildRequires: pkgconfig(x11)
 BuildRequires: pkgconfig(xext)
