@@ -1,6 +1,6 @@
 %define name wmx
 %define version 6pl1
-%define release  9
+%define release  10
 
 Summary: A minimal window manager
 Name: %{name}
