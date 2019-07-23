@@ -5,7 +5,7 @@
 Summary: A minimal window manager
 Name: %{name}
 Version: %{version}
-Release: %{release}
+Release:	1
 License: BSD-like
 Url: http://www.all-day-breakfast.com/wmx/
 Group: Graphical desktop/Other
