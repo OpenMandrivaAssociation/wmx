@@ -7,7 +7,7 @@ Name: %{name}
 Version: %{version}
 Release:	1
 License: BSD-like
-Url: http://www.all-day-breakfast.com/wmx/
+Url: https://www.all-day-breakfast.com/wmx/
 Group: Graphical desktop/Other
 Source0: %{name}-%{version}.tar.bz2
 Patch1: wmx-syntax-fix.patch
