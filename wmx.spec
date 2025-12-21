@@ -14,6 +14,11 @@ Patch1: wmx-syntax-fix.patch
 Patch2: wmx-my-config.patch
 Patch3: wmx-64bitptr.patch
 Requires: rxvt
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: pkgconfig(x11)
 BuildRequires: pkgconfig(xext)
 BuildRequires: pkgconfig(xpm)
