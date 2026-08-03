@@ -1,11 +1,10 @@
---- Menu.C.orig	2004-05-27 09:54:25.000000000 +0200
-+++ Menu.C	2004-05-27 09:54:34.000000000 +0200
-@@ -621,7 +621,7 @@
- 
- 
- CommandMenu::CommandMenu(WindowManager *manager, XEvent *e,
--			 char* otherdir = NULL)
-+			 char* otherdir)
+--- Menu.C.orig
++++ Menu.C
+@@ -719,6 +719,7 @@
+ CommandMenu::CommandMenu(WindowManager *manager, XEvent *e, char* otherdir)
      : Menu(manager, e)
  {
++    // Default arguments belong on the declaration only (not the definition).
      const char *home = getenv("HOME");
+     const char *wmxdir = getenv("WMXDIR");
+ 

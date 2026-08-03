@@ -1,5 +1,5 @@
 %define name wmx
-%define version 6pl1
+%define version 8.0
 %define release  10
 
 Summary: A minimal window manager
@@ -9,7 +9,7 @@ Release:	1
 License: BSD-like
 Url: https://www.all-day-breakfast.com/wmx/
 Group: Graphical desktop/Other
-Source0: %{name}-%{version}.tar.bz2
+Source0: https://www.all-day-breakfast.com/wmx/wmx-8.tar.gz
 Patch1: wmx-syntax-fix.patch
 Patch2: wmx-my-config.patch
 Patch3: wmx-64bitptr.patch
@@ -30,10 +30,10 @@ no docks. wmx is barely configurable except by editing the source and
 recompiling the code.
 
 %prep
-%setup -q
-%patch1 -p0
-%patch2 -p0
-%patch3 -p0
+%setup -q -n wmx-8
+%patch -P1 -p0
+%patch -P2 -p0
+%patch -P3 -p0
 
 %build
 %configure2_5x
